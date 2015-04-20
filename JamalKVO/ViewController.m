@@ -8,7 +8,16 @@
 
 #import "ViewController.h"
 #import "Jamal_KVO.h"
-#import "PerSon.h"
+
+@interface PerSon : NSObject
+
+@property (nonatomic,strong)NSString *behaviour;
+
+@end
+
+@implementation PerSon
+
+@end
 
 @interface ViewController ()
 
