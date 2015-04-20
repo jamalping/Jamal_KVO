@@ -15,7 +15,6 @@
 		FB0E05591AE4E655008B1C98 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = FB0E05571AE4E655008B1C98 /* LaunchScreen.xib */; };
 		FB0E05651AE4E655008B1C98 /* JamalKVOTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FB0E05641AE4E655008B1C98 /* JamalKVOTests.m */; };
 		FB0E05701AE4E66D008B1C98 /* Jamal_KVO.m in Sources */ = {isa = PBXBuildFile; fileRef = FB0E056F1AE4E66D008B1C98 /* Jamal_KVO.m */; };
-		FB0E05761AE4F261008B1C98 /* test.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB0E05751AE4F261008B1C98 /* test.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,7 +44,6 @@
 		FB0E056E1AE4E66D008B1C98 /* Jamal_KVO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Jamal_KVO.h; sourceTree = "<group>"; };
 		FB0E056F1AE4E66D008B1C98 /* Jamal_KVO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Jamal_KVO.m; sourceTree = "<group>"; };
 		FB0E05741AE4F261008B1C98 /* JamalKVO-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "JamalKVO-Bridging-Header.h"; sourceTree = "<group>"; };
-		FB0E05751AE4F261008B1C98 /* test.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = test.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,7 +89,6 @@
 				FB0E054D1AE4E655008B1C98 /* AppDelegate.m */,
 				FB0E054F1AE4E655008B1C98 /* ViewController.h */,
 				FB0E05501AE4E655008B1C98 /* ViewController.m */,
-				FB0E05751AE4F261008B1C98 /* test.swift */,
 				FB0E056E1AE4E66D008B1C98 /* Jamal_KVO.h */,
 				FB0E056F1AE4E66D008B1C98 /* Jamal_KVO.m */,
 				FB0E05521AE4E655008B1C98 /* Main.storyboard */,
@@ -232,7 +229,6 @@
 				FB0E05511AE4E655008B1C98 /* ViewController.m in Sources */,
 				FB0E054E1AE4E655008B1C98 /* AppDelegate.m in Sources */,
 				FB0E05701AE4E66D008B1C98 /* Jamal_KVO.m in Sources */,
-				FB0E05761AE4F261008B1C98 /* test.swift in Sources */,
 				FB0E054B1AE4E655008B1C98 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -435,6 +431,7 @@
 				FB0E056A1AE4E655008B1C98 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FB0E056B1AE4E655008B1C98 /* Build configuration list for PBXNativeTarget "JamalKVOTests" */ = {
 			isa = XCConfigurationList;
@@ -443,6 +440,7 @@
 				FB0E056D1AE4E655008B1C98 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
