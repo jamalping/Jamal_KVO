@@ -14,6 +14,8 @@
 		FB0E05561AE4E655008B1C98 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB0E05551AE4E655008B1C98 /* Images.xcassets */; };
 		FB0E05591AE4E655008B1C98 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = FB0E05571AE4E655008B1C98 /* LaunchScreen.xib */; };
 		FB0E05651AE4E655008B1C98 /* JamalKVOTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FB0E05641AE4E655008B1C98 /* JamalKVOTests.m */; };
+		FB0E05701AE4E66D008B1C98 /* Jamal_KVO.m in Sources */ = {isa = PBXBuildFile; fileRef = FB0E056F1AE4E66D008B1C98 /* Jamal_KVO.m */; };
+		FB0E05731AE4ED8B008B1C98 /* PerSon.m in Sources */ = {isa = PBXBuildFile; fileRef = FB0E05721AE4ED8B008B1C98 /* PerSon.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +42,10 @@
 		FB0E055E1AE4E655008B1C98 /* JamalKVOTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JamalKVOTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB0E05631AE4E655008B1C98 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FB0E05641AE4E655008B1C98 /* JamalKVOTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JamalKVOTests.m; sourceTree = "<group>"; };
+		FB0E056E1AE4E66D008B1C98 /* Jamal_KVO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Jamal_KVO.h; sourceTree = "<group>"; };
+		FB0E056F1AE4E66D008B1C98 /* Jamal_KVO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Jamal_KVO.m; sourceTree = "<group>"; };
+		FB0E05711AE4ED8B008B1C98 /* PerSon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PerSon.h; sourceTree = "<group>"; };
+		FB0E05721AE4ED8B008B1C98 /* PerSon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PerSon.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +91,10 @@
 				FB0E054D1AE4E655008B1C98 /* AppDelegate.m */,
 				FB0E054F1AE4E655008B1C98 /* ViewController.h */,
 				FB0E05501AE4E655008B1C98 /* ViewController.m */,
+				FB0E05711AE4ED8B008B1C98 /* PerSon.h */,
+				FB0E05721AE4ED8B008B1C98 /* PerSon.m */,
+				FB0E056E1AE4E66D008B1C98 /* Jamal_KVO.h */,
+				FB0E056F1AE4E66D008B1C98 /* Jamal_KVO.m */,
 				FB0E05521AE4E655008B1C98 /* Main.storyboard */,
 				FB0E05551AE4E655008B1C98 /* Images.xcassets */,
 				FB0E05571AE4E655008B1C98 /* LaunchScreen.xib */,
@@ -221,6 +231,8 @@
 			files = (
 				FB0E05511AE4E655008B1C98 /* ViewController.m in Sources */,
 				FB0E054E1AE4E655008B1C98 /* AppDelegate.m in Sources */,
+				FB0E05731AE4ED8B008B1C98 /* PerSon.m in Sources */,
+				FB0E05701AE4E66D008B1C98 /* Jamal_KVO.m in Sources */,
 				FB0E054B1AE4E655008B1C98 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

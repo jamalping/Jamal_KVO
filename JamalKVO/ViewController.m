@@ -7,8 +7,12 @@
 //
 
 #import "ViewController.h"
+#import "Jamal_KVO.h"
+#import "PerSon.h"
 
 @interface ViewController ()
+
+@property (nonatomic,retain)Jamal_KVO *observer;
 
 @end
 
@@ -16,7 +20,20 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    PerSon *person = [[PerSon alloc] init];
+    person.behaviour = @"play";
+    self.observer = [Jamal_KVO observerWithObject:person keyPath:@"behaviour" target:self selector:@selector(observerAction)];
+    [self performSelector:@selector(change:) withObject:person afterDelay:3];
+}
+
+- (void)change:(PerSon *)person {
+    NSLog(@"person.behaviour--%@",person.behaviour);
+    person.behaviour = @"fighting";
+    NSLog(@"person.behaviour--%@",person.behaviour);
+}
+
+- (void)observerAction{
+    NSLog(@"kvo 回调响应");
 }
 
 - (void)didReceiveMemoryWarning {
