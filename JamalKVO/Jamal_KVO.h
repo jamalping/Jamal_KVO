@@ -10,6 +10,12 @@
 
 typedef void(^testBlock)(id newValue);
 
+@protocol testDelegate <NSObject>
+
+- (void)delegateAction:(NSString *)testValue;
+
+@end
+
 /**
  * @brief  KVO的封装，解决了如下问题
  1. 在observeValueForKeyPath:ofObject:change:context:方法里通过keyPath值来做调度，当Observe比较多的对象时，会使得代码变得杂乱和迷惑。
@@ -17,6 +23,9 @@ typedef void(^testBlock)(id newValue);
  */
 @interface Jamal_KVO : NSObject
 
+
+@property (nonatomic,assign)id <testDelegate>delegate;
+- (void)asfdgh;
 /**
  * @brief  生成一个观察者
  *

@@ -56,6 +56,12 @@
     } 
 }
 
+- (void)asfdgh {
+    if (self&&self.delegate&&[self.delegate respondsToSelector:@selector(delegateAction:)]) {
+        [self.delegate delegateAction:@"testVale"];
+    }
+}
+
 - (void)dealloc
 {
     id strongObservedObject = self.observedObject;
