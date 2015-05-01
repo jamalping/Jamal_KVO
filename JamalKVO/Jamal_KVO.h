@@ -8,6 +8,8 @@
 
 #import <Foundation/Foundation.h>
 
+typedef void(^testBlock)(id newValue);
+
 /**
  * @brief  KVO的封装，解决了如下问题
  1. 在observeValueForKeyPath:ofObject:change:context:方法里通过keyPath值来做调度，当Observe比较多的对象时，会使得代码变得杂乱和迷惑。
