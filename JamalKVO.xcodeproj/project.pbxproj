@@ -16,6 +16,7 @@
 		FB0E05591AE4E655008B1C98 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = FB0E05571AE4E655008B1C98 /* LaunchScreen.xib */; };
 		FB0E05651AE4E655008B1C98 /* JamalKVOTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FB0E05641AE4E655008B1C98 /* JamalKVOTests.m */; };
 		FB0E05701AE4E66D008B1C98 /* Jamal_KVO.m in Sources */ = {isa = PBXBuildFile; fileRef = FB0E056F1AE4E66D008B1C98 /* Jamal_KVO.m */; };
+		FB9CC0781B1081A10001BC41 /* FeildViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FB9CC0771B1081A10001BC41 /* FeildViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +49,8 @@
 		FB0E056E1AE4E66D008B1C98 /* Jamal_KVO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Jamal_KVO.h; sourceTree = "<group>"; };
 		FB0E056F1AE4E66D008B1C98 /* Jamal_KVO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Jamal_KVO.m; sourceTree = "<group>"; };
 		FB0E05741AE4F261008B1C98 /* JamalKVO-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "JamalKVO-Bridging-Header.h"; sourceTree = "<group>"; };
+		FB9CC0761B1081A10001BC41 /* FeildViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FeildViewController.h; sourceTree = "<group>"; };
+		FB9CC0771B1081A10001BC41 /* FeildViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FeildViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +118,8 @@
 				FB0E05501AE4E655008B1C98 /* ViewController.m */,
 				FB0E056E1AE4E66D008B1C98 /* Jamal_KVO.h */,
 				FB0E056F1AE4E66D008B1C98 /* Jamal_KVO.m */,
+				FB9CC0761B1081A10001BC41 /* FeildViewController.h */,
+				FB9CC0771B1081A10001BC41 /* FeildViewController.m */,
 				FB0E05521AE4E655008B1C98 /* Main.storyboard */,
 				FB0E05551AE4E655008B1C98 /* Images.xcassets */,
 				FB0E05571AE4E655008B1C98 /* LaunchScreen.xib */,
@@ -288,6 +293,7 @@
 				FB0E05511AE4E655008B1C98 /* ViewController.m in Sources */,
 				FB0E054E1AE4E655008B1C98 /* AppDelegate.m in Sources */,
 				FB0E05701AE4E66D008B1C98 /* Jamal_KVO.m in Sources */,
+				FB9CC0781B1081A10001BC41 /* FeildViewController.m in Sources */,
 				FB0E054B1AE4E655008B1C98 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

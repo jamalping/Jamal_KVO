@@ -16,6 +16,7 @@ static NSString *Notification_test = @"Notification_test";
 
 @property (nonatomic,strong)NSString *behaviour;
 
+
 @end
 
 @implementation PerSon
@@ -29,12 +30,30 @@ static NSString *Notification_test = @"Notification_test";
 @property (nonatomic,retain)NSString *test;
 @property (nonatomic,retain)RACSignal *customSingnal;
 @property (nonatomic,retain)NSString *aaa;
+@property (nonatomic,strong)UITextField *textField;
 @end
 
 @implementation ViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    
+    _textField = [[UITextField alloc] initWithFrame:CGRectMake(100, 350, 200, 40)];
+    _textField.backgroundColor = [UIColor cyanColor];
+    [self.view addSubview:_textField];
+    [self.textField.rac_textSignal subscribeNext:^(id x) {
+        NSLog(@"x= %@",x);
+    }];
+    [self.textField.rac_textSignal subscribeCompleted:^{
+        NSLog(@"completed!!");
+    }];
+//    [self.textField.rac_textSignal filter:^BOOL(id value) {
+//
+//    }];
+    [self.textField.rac_newTextChannel subscribeNext:^(id x) {
+        NSLog(@"x= %@",x);
+    }];
 
     /**
      * @brief
@@ -45,6 +64,7 @@ static NSString *Notification_test = @"Notification_test";
      * @return racSignal
      */
     RACSignal *racSignal = RACObserve(self, test);
+/// ///// ///// ///// ///// ///// ///// ///// ///// ///// ///// ///// //
     /**
      * @brief  RAC 监听KVO的值的变化
      *
@@ -56,7 +76,7 @@ static NSString *Notification_test = @"Notification_test";
     [racSignal subscribeNext:^(id x) {
         NSLog(@"value of changed = %@",x);
     }];
-    
+/// ///// ///// ///// ///// ///// ///// ///// ///// ///// ///// ///// //
     UIButton *button = [UIButton buttonWithType:UIButtonTypeContactAdd];
     button.frame = CGRectMake(100, 100, 100, 100);
     button.backgroundColor = [UIColor redColor];
@@ -70,7 +90,7 @@ static NSString *Notification_test = @"Notification_test";
         NSLog(@"button click %@",input);
         return [RACSignal empty];
     }];
-    
+/// ///// ///// ///// ///// ///// ///// ///// ///// ///// ///// ///// //
     /**
      * @brief  注册一个通知
      *
@@ -90,6 +110,7 @@ static NSString *Notification_test = @"Notification_test";
     person.behaviour = @"play";
     _test = @"test";
     self.observer = [Jamal_KVO observerWithObject:person keyPath:@"behaviour" target:self selector:@selector(observerAction)];
+/// ///// ///// ///// ///// ///// ///// ///// ///// ///// ///// ///// //
     /**
      * @brief  代理的回调方法
      *
@@ -103,7 +124,7 @@ static NSString *Notification_test = @"Notification_test";
     }];
     self.observer.delegate = self;
     [self performSelector:@selector(change:) withObject:person afterDelay:1];
-//    ////////////////////    ////////////////////    //////////////////
+/// ///// ///// ///// ///// ///// ///// ///// ///// ///// ///// ///// //
 //    self.aaa = @"bbb";
     // 创建自定义信号
     _customSingnal = [RACSignal createSignal:^RACDisposable *(id<RACSubscriber> subscriber) {
